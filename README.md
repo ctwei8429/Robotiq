@@ -125,3 +125,8 @@ $ rosrun robotiq_2f_gripper_control Robotiq2FGripperStatusListener.py
  [7] ROS.org Robotiq Package Summary: http://wiki.ros.org/robotiq
  
  [8] Robotiq Tutorials Control of a 2-Finger Gripper using the Modbus RTU protocol (ros kinetic and newer releases):http://wiki.ros.org/robotiq/Tutorials/Control%20of%20a%202-Finger%20Gripper%20using%20the%20Modbus%20RTU%20protocol%20%28ros%20kinetic%20and%20newer%20releases%29#Run_the_2-Finger_Gripper_Simple_Controller_Node
+ 
+ [9] What is this rosdep error ?: https://answers.ros.org/question/35741/what-is-this-rosdep-error/
+ 
+ 
+ 
