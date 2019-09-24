@@ -76,7 +76,7 @@ The EtherCAT soem library is also required to build the Robotiq package. It can 
 $ sudo apt-get install ros-kinetic-soem
 ```
 ## ROS Nodes to Control the Gripper
-# Run the 2-Finger Gripper Driver Node
+### Run the 2-Finger Gripper Driver Node
 The gripper is driven by the node "Robotiq2FGripperRtuNode.py" contained in the package "robotiq_2f_gripper_control". Note that "roscore" should be running prior to launching the driver node. The gripper device ID will also need to be provided as an argument. Thus, to know what is the device ID of your 2-finger gripper, one way is simply by typing "dmesg | grep ttyUSB" in a terminal right after the gripper was connected to the computer's USB port.
 
 For example, the driver for controlling a 2-finger gripper having "ttyUSB0" as its device ID is launched using the following command:
@@ -90,7 +90,7 @@ $ roscore
 $ source devel/setup.bash
 $ rosrun robotiq_2f_gripper_control Robotiq2FGripperRtuNode.py /dev/ttyUSB0
 ```
-# Run the 2-Finger Gripper Simple Controller Node
+### Run the 2-Finger Gripper Simple Controller Node
 The driver listens for messages on "Robotiq2FGripperRobotOutput" using the "Robotiq2FGripper_robot_output" msg type. The messages are interpreted and commands are sent to the gripper accordingly. A simple controller node is provided which can be run (in another terminal) using "rosrun robotiq_2f_gripper_control Robotiq2FGripperSimpleController.py"
 
 Open a new terminal and run rRobotiq2FGripperSimpleController.py
@@ -98,7 +98,7 @@ Open a new terminal and run rRobotiq2FGripperSimpleController.py
 $ source devel/setup.bash
 $ rosrun robotiq_2f_gripper_control Robotiq2FGripperSimpleController.py
 ```
-# Run the 2-Finger Gripper Status Listener Node
+### Run the 2-Finger Gripper Status Listener Node
 Open a new terminal and run Robotiq2FGripperStatusListener.py
 ```bash
 $ source devel/setup.bash
