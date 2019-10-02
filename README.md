@@ -56,6 +56,13 @@ $ dmesg | grep tty
 It's probably something like ttyUSB0.
 
 ## Installation
+*Install the following before catkin_make
+```bash
+$ sudo apt-get install ros-kinetic-soem 
+$sudo apt-get install ros-kinetic-controller-manager
+$sudo apt-get install ros-kinetic-socketcan-interface 
+```
+
 1. Create a new Robotiq workspace and download the robotiq package
 ```bash
 $ mkdir -p robotiq_ws/src
@@ -72,9 +79,12 @@ Modbus TCP:
 $ rosdep install robotiq_modbus_rtu
 ```
 The EtherCAT soem library is also required to build the Robotiq package. It can be downloaded from debs by
+(If you have done the above, you don’t need to operate)
 ```bash
-$ sudo apt-get install ros-kinetic-soem
+$ sudo apt-get install ros-kinetic-soem 
 ```
+
+
 ## ROS Nodes to Control the Gripper
 ### Run the 2-Finger Gripper Driver Node
 The gripper is driven by the node "Robotiq2FGripperRtuNode.py" contained in the package "robotiq_2f_gripper_control". Note that "roscore" should be running prior to launching the driver node. The gripper device ID will also need to be provided as an argument. Thus, to know what is the device ID of your 2-finger gripper, one way is simply by typing "dmesg | grep ttyUSB" in a terminal right after the gripper was connected to the computer's USB port.
