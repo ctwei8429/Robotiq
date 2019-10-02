@@ -59,8 +59,8 @@ It's probably something like ttyUSB0.
 *Install the following before catkin_make
 ```bash
 $ sudo apt-get install ros-kinetic-soem 
-$sudo apt-get install ros-kinetic-controller-manager
-$sudo apt-get install ros-kinetic-socketcan-interface 
+$ sudo apt-get install ros-kinetic-controller-manager
+$ sudo apt-get install ros-kinetic-socketcan-interface 
 ```
 
 1. Create a new Robotiq workspace and download the robotiq package
