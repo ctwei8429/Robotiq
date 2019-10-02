@@ -41,7 +41,7 @@ Note that Robotiq devices that use the USB serial port will appear as /dev/ttyUS
 
 4. Change to have permanent permissions and change USERNAME to your own username
 ```bash
-$ sudo usermod -aG　dialout $USERNAME
+$ sudo usermod -aG dialout $USERNAME
 ```
 Add this username to the dialout user group, then log out of the computer. This will not modify the permissions for the next reboot.
 
